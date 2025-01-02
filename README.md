@@ -36,6 +36,13 @@ public class Ostrich extends Bird{}
 
 => Interface Segregation tell us to break bigger interfaces so that methods/behaviors/contracts defined in a particular interface are cohesive/related to each other. 
 
+5. Dependency Inversion
+- High level modules should not depend on low level modules. Both should depend on abstractions.
+	--A module is a class, function, etc.
+- Abstractions should not depend on details. Details should depend on abstractions.	
+- Why:
+	--If we make modules tight-coupling and there are requirement changes in the future, we have to modify the existing code.
+	--If we mess around with the code which is already written and tested, there are a higher possibility to create more bugs and defects.
 **Explanation**
 - TO avoid interface pollution: We should not make our interfaces bigger, i.e. not cram methods unrelated in a one big interface and make all other classes in our software system/module implement that interface.
 
